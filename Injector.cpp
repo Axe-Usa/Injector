@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 	else printf("[+] Proceso abierto.\n");
 	
 	// Reservar memoria para el argumento (ruta de la DLL)
-	char thData[] = "C:/Users/moh/Desktop/dllmain.dll";
+	char thData[] = "C:/Users/Zer0/Desktop/dllmain.dll";
 	LPVOID dirToArg = VirtualAllocEx(myProc, NULL, strlen(thData), MEM_COMMIT | MEM_RESERVE, PAGE_EXECUTE_READWRITE);
 	if (dirToArg == NULL)
 		error("[-] Error reservando memoria para argumento.\n");
